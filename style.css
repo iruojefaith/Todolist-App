@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&family=Space+Grotesk:wght@300;400;500;600;700&family=Work+Sans:wght@300;400;500;600;700&display=swap');
+
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+  --white: #FFFFFF;
+  --light-green: #0A7878;
+  --dark-green : #053434;
+  --grey: #F1F1F1;
+  --light-grey: #FAFAFA;
+  --dark-grey: #8E8E8E;
+  --text-color: #3A3838;
+  --nav-height: 10vh;
+}
+
+body{
+    height: 100vh;
+    font-family: 'Space Grotesk', sans-serif;
+}
+main{
+    display: flex;
+    flex-direction: column;
+}
+.main_sidebar {
+    width: 10%;
+    height: 100%;
+}
+.main_content{
+    width: 100%;
+    display: flex;
+}
+.main_content_two {
+    width: 90%;
+     background: rgb(234, 234, 234);
+     height: 100%;
+}
+img{
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+nav{
+    width: 100%;
+    display: flex;
+    margin-top: 15px;
+}
+.container{
+    width: 40%;
+    top: 80%;
+    left: 50%;
+    background: white;
+    border-radius: 10px;
+    min-width: 450px;
+    position: absolute;
+    min-height: 100px;
+    transform: translate(-50%,-50%);
+}
+#newtask{
+    position: relative;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#newtask textarea{
+ background: var(--light-grey);
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: 24px;
+  outline: none;
+  resize: none;
+}
+
+#newtask input:focus{
+    outline: none;
+    border-color: #0d75ec;
+}
+#newtask button{
+    position: relative;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: #0d75ec;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    outline: none;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+}
+
+#tasks{
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    background-color: #ffffff;
+    padding: 30px 20px;
+    margin-top: 10px;
+}
+
+.task{
+    border-radius: 5px;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #c6c6c6;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    background-color: #c5e1e6;
+    height: 150px;
+    margin-bottom: 8px;
+    padding: 5px;
+}
+.task span{
+    font-size: 15px;
+    font-weight: 400;
+}
+.task button{
+    background-color: #0a2ea4;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+}
